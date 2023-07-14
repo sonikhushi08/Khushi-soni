@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coffee</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#New">What's New</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's<span>StarCoffee</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit quae beata!</p>
+                <a href="#">Learn More</a>
+
+            </div>
+            <div class="imgBox">
+                <img src="images/img3.png" class="starbucks">
+            </div>
+
+        </div>
+
+        <ul class="images">
+            <li><img src="images/img1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/img2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="images/img3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#017143')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="https://www.facebook.com/starbucksindia"><img src="sci/facebook.png"></a>
+            </li>
+            <li>
+                <a href=https://twitter.com/i/flow/login?redirect_after_login=%2Fstarbucksindia><img src="sci/twitter.png"></a>
+            </li>
+            <li>
+                <a href=https://www.instagram.com/starbucksindia/><img src="sci/instagram.png"></a>
+            </li>
+        </ul>
+
+
+
+    </section>
+    <section class="Menu" id="Menu">
+        <div class="Menu-img">
+            <img src="images/menu.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading"> <span>Menu</span></h2>
+
+            <img width="500" height="600" src="images/menu-price.jpg" alt="">
+            <img width="500" height="600" src="images/menu-price2.webp" alt="">
+            <img width="500" height="600" src="images/menu-price3.jpg" alt="">
+            <img width="500" height="600" src="images/menu-price4.jpg" alt="">
+
+
+
+
+            <!--<a href="#" class="btn">Read More</a>-->
+        </div>
+    </section>
+
+    <section class=" New" id="New">
+        <h2 class="heading">Latest <span>Offers</span></h2>
+
+        <div class=" New-container">
+            <div class="New-box">
+                <img height=300 width=400 src="images/offer1.jpg" alt="">
+
+                <div class="New-layer">
+
+                    <a href="https://www.starbucks.in/giftcards"></a>
+                </div>
+            </div>
+
+            <div class="New-box">
+                <img height=300 width=400 src="images/offer2.jpg" alt="">
+
+                <div class="New-layer">
+
+                    <a href="https://www.starbucks.in/giftcards"></a>
+
+                </div>
+
+            </div>
+            <div class="New-box">
+                <img height=300 width=400 src="images/offer3.jpg" alt="">
+
+                <div class="New-layer">
+
+                    <a href="https://www.starbucks.in/giftcards"></a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.starbucks').src = anything;
+            }
+
+            function changeCircleColor(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+
+            function toggleMenu() {
+                var menuToggle = document.querySelector('.toggle');
+                var navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+
+</body>
+
+</html>
